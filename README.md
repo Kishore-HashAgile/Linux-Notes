@@ -191,8 +191,20 @@
 - **`awk`**: Pattern scanning and processing language  
   Example: `awk '{print $1}' file.txt`
 
-- **`sed`**: Stream editor for filtering and transforming text  
+- **`sed`**: Stream editor for filtering and transforming text
+  
+  Replace the first occurrence of "old" with "new" in each line of file.txt:
   Example: `sed 's/old/new/g' file.txt`
+
+  Replace all occurrences of "old" with "new" in each line:
+  Example: `sed 's/old/new/g' file.txt`
+
+  Delete the 3rd line in the file:
+  Example: `sed '3d' file.txt`
+  
+  Print the first 5 lines:
+  Example: `sed -n '1,5p' file.txt`
+
 
 - **`cut`**: Remove sections from each line of files  
   Example: `cut -d' ' -f1 file.txt`
