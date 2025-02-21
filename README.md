@@ -188,15 +188,29 @@
 - **`p`**: Paste below cursor
 
 ## Text Processing
-- **`awk`**: Pattern scanning and processing language  
+- **`awk`**: Pattern scanning and processing language
+  
+  Print the first column:
   Example: `awk '{print $1}' file.txt`
 
+  Print lines 2 to 5:
+  Example: `awk 'NR >= 2 && NR <= 5' file.txt`
+
+  Print each line with its line number:
+  Example: `awk '{print NR, $0}' file.txt`
+
+  Process multiple files and print their name:
+  Example: `awk '{print FILENAME, $0}' file1.txt file2.txt`
+
+  Use the BEGIN block to initialize something before processing lines:
+  Example: `awk 'BEGIN {print "Processing file..."} {print $1} END {print "Finished processing"}' file.txt`
+  
 - **`sed`**: Stream editor for filtering and transforming text
 
-- Replace the first occurrence of "old" with "new" in each line of file.txt:
+  Replace the first occurrence of "old" with "new" in each line of file.txt:
   Example: `sed 's/old/new/g' file.txt`
 
-- Replace all occurrences of "old" with "new" in each line:
+  Replace all occurrences of "old" with "new" in each line:
   Example: `sed 's/old/new/g' file.txt`
 
   Delete the 3rd line in the file:
@@ -208,3 +222,12 @@
 
 - **`cut`**: Remove sections from each line of files  
   Example: `cut -d' ' -f1 file.txt`
+
+  Extract the first 5 characters from each line:
+  Example: `cut -c 1-5 file.txt`
+
+  Extract bytes from beginning to end of line
+  Example: `cut -b 2-4 file.txt`
+
+  Extract first field 
+  Example: `cut -f 1 state.txt`
