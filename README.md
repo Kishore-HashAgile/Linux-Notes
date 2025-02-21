@@ -1,8 +1,18 @@
-# Command Line Cheat Sheet
+Process Management
+ps: Display processes
 
-## File and Directory Operations
-
-### **`ls`**: List files and directories  
 Example:
-```bash
-ls
+
+ps aux
+
+top: Process and system usage
+
+Example:
+
+top
+
+kill: Kill process
+
+Example:
+
+kill -9 PID
