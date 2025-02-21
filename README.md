@@ -192,11 +192,11 @@
   Example: `awk '{print $1}' file.txt`
 
 - **`sed`**: Stream editor for filtering and transforming text
-  
-  Replace the first occurrence of "old" with "new" in each line of file.txt:
+
+- Replace the first occurrence of "old" with "new" in each line of file.txt:
   Example: `sed 's/old/new/g' file.txt`
 
-  Replace all occurrences of "old" with "new" in each line:
+- Replace all occurrences of "old" with "new" in each line:
   Example: `sed 's/old/new/g' file.txt`
 
   Delete the 3rd line in the file:
