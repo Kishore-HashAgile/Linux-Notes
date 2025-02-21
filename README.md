@@ -1,3 +1,11 @@
+cd ~
+
+    Definition: Navigate to the home directory.
+    Example:
+
+cd ~
+
+
 # Command Line Cheat Sheet
 
 ## File and Directory Operations
