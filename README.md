@@ -112,7 +112,7 @@
   Example: `ping google.com`
 
 ## `grep` Variants
-globally search for a regular expression and print matching lines
+  GREP stands for globally search for a regular expression and it prints the matching lines as result.
 - **`grep`**: Search pattern in file  
   Example: `grep 'pattern' file.txt`
 
